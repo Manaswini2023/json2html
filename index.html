@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON to HTML Table Example</title>
+</head>
+<body>
+    <h1>Sample JSON to HTML Table</h1>
+    <div id="table-container"></div>
+
+    <script type="module">
+        // Import the json2html function from the GitHub Pages URL
+        import json2html from "https://your-username.github.io/json2html-example/json2html.js";
+
+        // Sample JSON data
+        const data = [
+            { Name: "Alice", Age: 25 },
+            { Name: "Bob", Age: 30 },
+            { Name: "Charlie", Age: 35, Gender: "M" }
+        ];
+
+        // Get the HTML table
+        const tableHtml = json2html(data);
+
+        // Insert the table into the DOM
+        document.getElementById("table-container").innerHTML = tableHtml;
+    </script>
+</body>
+</html>
